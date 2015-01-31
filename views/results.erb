@@ -14,23 +14,17 @@
 
   	<center><h1><div><span class="rainbow">Word Battlr</span></div></h1></center>
 
-	<form action="/results" method="post">
-		<div id = "word1">
-			<div class="formcolor">First Word:</div><br>
-			<input type="text" name="firstword">
-		</div>
-	
-		<div id = "word2">
-			<div class="formcolor">Second Word:</div><br>
-			<input type="text" name="secondword">
-			<br>
-			<br>
-		</div>
-		<div class="submitbutton"><input type="submit" value="Submit"></div>
-	</form>
-	
-
-
+	<div id ="finalresult">
+  	<%=@word_pop_1%>
+  	<%=@word_pop_2%>
+  	<%=@winner%>
+  	</div>
+  	<!-- <a id = "again" href="/">Again</a> -->
+	<div id = "again">
+	  	<FORM METHOD="LINK" ACTION="/">
+		<INPUT TYPE="submit" VALUE="Again">
+		</FORM>
+	</div>
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

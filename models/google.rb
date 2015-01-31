@@ -1,5 +1,3 @@
-require 'mechanize'
-
 class Google
 
 	def initialize(first_word, second_word)
@@ -23,17 +21,13 @@ class Google
 
 	def compare
 		if @word1_popularity >= @word2_popularity
-			puts "Word 1 is more popular!!!"
+			 "Word 1 is more popular!!!"
 		elsif @word1_popularity <= @word2_popularity
-			puts "Word 2 is more popular!!!"
+			 "Word 2 is more popular!!!"
 		else @word1_popularity == @word2_popularity
-			puts "Both Words are equally popular"
+			 "Both Words are equally popular"
 		end
 	end
 
 end
 
-test = Google.new("right twix","left twix")
-test.get_popularity_1
-test.get_popularity_2
-test.compare
